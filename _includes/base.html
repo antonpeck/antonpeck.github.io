@@ -7,12 +7,11 @@
 </head>
 <body>
     <header>
-        <h1>First Post with 11ty</h1>
+        <h1>{{ title | default: "Hello"}}</h1>
     </header>
     <main>
-        First Post with 11ty
-        <p>This should be a blog post. :)</p>
-
+        {{ title }}
+        {{ content }}
     </main>
 </body>
 </html>
