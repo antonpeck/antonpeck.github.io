@@ -10,7 +10,7 @@
         <h1>{{ title | default: "Hello"}}</h1>
     </header>
     <main>
-        {{ title }}
+        {{ date | readableDate }}
         {{ content }}
     </main>
 </body>

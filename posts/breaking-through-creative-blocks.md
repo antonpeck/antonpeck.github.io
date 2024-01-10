@@ -1,5 +1,6 @@
 ---
 title: Breaking Through Creative Blocks
+date: 2020-08-24
 ---
 
 ## I’m going to be straight-up honest - I’m blocked.

@@ -1,5 +1,6 @@
 ---
 title: On Giving Up
+date: 2023-07-31
 ---
 
 Creative people. Sigh. We’ve all been there, silently telling ourselves to quit. That we’re not good enough. And yet sometimes we trudge onward, saying yes to all of the tasks, as if to validate that we can actually do these things.

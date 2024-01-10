@@ -1,5 +1,6 @@
 ---
 title: Understanding Perfection
+date: 2020-07-26
 ---
 
 It’s pretty well known that artists (and also designers), are never really happy with their work. That the job is never complete. They poke at it, adjust it, and tweak things until so much time has gone by that scope creep has kicked in, or the end result is actually worse than it was before!

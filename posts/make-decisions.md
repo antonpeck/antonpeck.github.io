@@ -1,5 +1,6 @@
 ---
 title: Make Decisions
+date: 2023-09-22
 ---
 
 Sometimes, when I am in a state of indecision, I find myself turning to my audience for help. At first, this seems like the right thing to do. Even when it’s just a “Hey, what would you like to see more of?”

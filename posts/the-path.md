@@ -1,5 +1,6 @@
 ---
 title: The Path
+date: 2023-07-19
 ---
 
 There is a path in a forest ahead of you. It varies in direction and ease of access. Sometimes the environment is easy to navigate, in other areas there are branches that reach out to snag your arm if you’re not careful. The path also seems to split off, meander, and even cross over itself. Through the trees, you can barely see interesting things nearby, such as a little bridge that goes over a creek, or a little underpass, with a pleasant stone archway. The path is yours alone to take, but you must always move forward. On this path, there is no going back.

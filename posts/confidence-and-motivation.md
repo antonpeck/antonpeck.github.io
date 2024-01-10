@@ -1,5 +1,6 @@
 ---
 title: Confidence & Motivation
+date: 2020-09-07
 ---
 
 Imagine this: you need to do something that you need to get done, but you feel very stuck in how to get started; unable to really get any progress rolling. You’re dangerously close to procrastinating the task, especially if it’s something that’s really just for yourself. It could be cleaning, or a little project around the home, or… writing a blog post (cough).

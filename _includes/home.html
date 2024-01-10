@@ -7,12 +7,10 @@
 </head>
 <body>
     <header>
-        <h1>Inspiration is good!</h1>
+        <h1>{{ title | default: "Hello"}}</h1>
     </header>
     <main>
-        Invalid DateTime
-        <h2>I'm having a bit of fun here, let's go!</h2>
-
+        {{ content }}
     </main>
 </body>
 </html>

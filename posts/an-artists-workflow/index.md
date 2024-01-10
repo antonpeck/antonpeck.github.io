@@ -1,5 +1,6 @@
 ---
 title: An Artists Workflow
+date: 2020-08-31
 ---
 
 Every so often, I am asked about some of the steps I use to create my art. This blog post is a high-level look at my workflow, using one of my recent illustrations as an example. One of the things you’ll find with me is that I like to keep it loose. Art doesn’t have to be about rules, or making other people happy. But art absolutely can be about finding your own style, and never stop trying to improve on what you enjoy.

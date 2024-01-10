@@ -1,5 +1,6 @@
 ---
 title: The Train
+date: 2023-07-20
 ---
 
 I have another prompt to work from Today!

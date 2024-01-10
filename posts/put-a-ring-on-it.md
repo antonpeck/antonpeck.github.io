@@ -1,5 +1,6 @@
 ---
 title: Put a Ring On It
+date: 2023-08-18
 ---
 
 How many of you (the few that will see this) remember blog rings from the early 2000’s? Blog rings, also known as webrings, were a bit of a pre social media way of allowing like-minded people to keep in touch with each other. It was all decentralized, you owned your content, and you could pretty easily cross-link to other blog posts.

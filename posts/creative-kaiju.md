@@ -1,5 +1,6 @@
 ---
 title: Creative Kaiju
+date: 2023-06-20
 ---
 
 To those unfamiliar with the artistic mind, people who are creative can appear to be different than most. We tend to live in an imagination full of rich, vivid worlds, built around our own experiences. These worlds can be beautiful, or they can be terrifying. We witness the echoes of these landscapes in the work that we create in the real world.
