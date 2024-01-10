@@ -12,7 +12,7 @@ In case you are seeing this and wondering what I'm up to, this is my first attem
 {% for post in collections.post %}
 
 [{{ post.data.title }}]({{ post.url }})
-<time class="postlist-date" datetime="{{ post.date }}">{{ post.date }}</time>
+{{ post.date | prettyDate }}
 
 {% endfor %}
 
