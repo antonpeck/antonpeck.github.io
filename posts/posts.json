@@ -1,4 +1,5 @@
 {
-    "layout": "base.html",
-    "tags": "post"
+    "layout": "posts.njk",
+    "tags": "post",
+    "section": "post"
 }

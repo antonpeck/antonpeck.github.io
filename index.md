@@ -1,6 +1,7 @@
 ---
-layout: home.html
-title: Anton Peck
+layout: base.njk
+title: 'Anton Peck'
+section: home
 ---
 
 Hello there.

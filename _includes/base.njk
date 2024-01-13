@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    {# to-do: set up meta to be included as a partial #}
+    <title>{{ site.title }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+    <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+<body>
+{{ title }}, {{ site.title }}
+{% block content %}
+{{ content | safe }}
+{% endblock %}
+
+</body>
+</html>
