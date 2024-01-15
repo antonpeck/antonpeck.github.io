@@ -10,11 +10,9 @@ In case you are seeing this and wondering what I'm up to, this is my first attem
 
 ### Blog Posts (test)
 
-{% for post in collections.post %}
-
-[{{ post.data.title }}]({{ post.url }})
+{% for post in collections.post | reverse %}
+[{{ post.data.title }}]({{ post.url }})  
 {{ post.date | prettyDate }}
-
 {% endfor %}
 
 Huzzah!!!
