@@ -8,7 +8,7 @@
     },
     "scripts": {
         "build": "npx @11ty/eleventy",
-        "start": "npx @11ty/eleventy --serve --quiet --formats=md,img",
+        "start": "npx @11ty/eleventy --serve --formats=html,md,njk,img",
         "debug": "DEBUG=Eleventy* npx @11ty/eleventy",
         "benchmark": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy"
     },
