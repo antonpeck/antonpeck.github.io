@@ -12,16 +12,38 @@
 </head>
 <body>
 
-{{ title }}
+    <header>
+        {{ title }}
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Services</li>
+                <li>Articles</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
 
-{{ content | safe }}
+    <section>
+        <h2>Hero Section</h2>
+    </section>
 
-<footer>
-    <p>
-        &copy; 2024 Anton Peck
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-</footer>
+    <section>
+        <h2>Main Content Section</h2>
+        {{ content | safe }}
+    </section>
+
+    <section>
+        <h2>Testimonials Section</h2>
+    </section>
+    
+    <footer>
+        <p>
+            &copy; 2024 Anton Peck
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+    </footer>
 
 </body>
 </html>
