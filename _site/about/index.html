@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 
-    {# to-do: set up meta to be included as a partial #}
-    <title>{{ site.title }}</title>
+    
+    <title>Anton Peck: Website Design &amp; Development | Art &amp; Illustration</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
@@ -13,7 +13,7 @@
 <body>
 
     <header>
-        {{ title }}
+        About Anton Peck
         <nav>
             <ul>
                 <li><a href="/">Home</a></li>
@@ -25,12 +25,13 @@
 
     <section>
         <h2>Hero Section</h2>
-        {% if section == 'home' %} {{ section }} {% endif %}
+        
     </section>
 
     <section>
         <h2>Main Content Section</h2>
-        {{ content | safe }}
+        
+
     </section>
 
     <section>
