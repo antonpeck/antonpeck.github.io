@@ -2,6 +2,9 @@
 layout: base.njk
 title: 'Anton Peck'
 section: home
+pagination:
+  data: collections.post
+  size: 3
 ---
 
 <p>In case you are seeing this and wondering what I'm up to, this is my first attempt (public, even) at learning to use 11ty, and publish to Github Pages. In time, once I've worked out the way it parses everything, there will be much more content, and a bit of style.</p>
@@ -10,10 +13,14 @@ section: home
 
 <ul class="post-list">
 {%- for post in collections.post | reverse -%}
-  {%- if loop.index0 < 5 -%}
+  {%- if loop.index0 < 25 -%}
     <li>
       <a href="{{ post.url }}">{{ post.data.title }}</a> - {{post.data.date | prettyDate}}
     </li>
   {%- endif -%}
 {% endfor %}
+---
+{% for post in pagination.items %}
+  <li>{{ post.data.title }}</li>
+{%- endfor -%}
 </ul>

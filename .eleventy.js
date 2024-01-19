@@ -13,6 +13,11 @@ module.exports = function(eleventyConfig) {
     return d.toFormat("LLLL d, kkkk");
   });
 
+  // limit filter
+  eleventyConfig.addFilter("limit", function(array, limit) {
+    return array.slice(0, limit);
+  });
+
   eleventyConfig.addPassthroughCopy("css");
 
   return {
