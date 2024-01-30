@@ -4,9 +4,7 @@
 
     {# to-do: set up meta to be included as a partial #}
     <title>{{ site.title }}</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+    {% include "partials/meta.njk" %}
     <link rel="stylesheet" href="/css/styles.css">
 
 </head>
@@ -17,22 +15,12 @@
         {% include "partials/nav.njk" %}
     </header>
 
-    <section>
-        <h2>Hero Section</h2>
-        {% if section == 'home' %} {{ section }} {% endif %}
-    </section>
-
     <main>
         <h2>Main Content Section</h2>
-
         {% block content %}
         {{ content | safe }}
         {% endblock %}
     </main>
-
-    <section>
-        <h2>Testimonials Section</h2>
-    </section>
     
     {% include "partials/footer.njk" %}
 
