@@ -2,8 +2,6 @@ const { DateTime } = require("luxon");
 const Image = require("@11ty/eleventy-img");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 
-//const pluginNavigation = require("@11ty/eleventy-navigation");
-
 module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPlugin(pluginRss);
@@ -18,7 +16,9 @@ module.exports = function(eleventyConfig) {
     return array.slice(0, limit);
   });
 
-  eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addWatchTarget("./content/css");
+
+  eleventyConfig.addPassthroughCopy("./content/css");
 
   return {
 		dir: {

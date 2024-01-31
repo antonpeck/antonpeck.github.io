@@ -1,6 +1,25 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    hanging-punctuation: first last;
+}
 body {
+    background: #151515;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
-    line-height: calc(1ex / 0.32);
-    color: #344;
+    font-weight: 300;
+    color: #f4f4f4;
+    margin: 0px;
+    padding: 0px;
+    min-height: 100svh;
+}
+a {
+    color: #FFF;
+    /* text-decoration: none; */
+}
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+p {
+    max-width: 80ch;
+    text-wrap: pretty;
 }
