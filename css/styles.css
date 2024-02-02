@@ -4,22 +4,39 @@ html {
     hanging-punctuation: first last;
 }
 body {
-    background: #151515;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(39, 55, 77);
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+    line-height: 1.25rem;
     font-weight: 300;
-    color: #f4f4f4;
+    font-smooth: always;
+    font-feature-settings: normal;
+    color: rgb(255,255,255);
     margin: 0px;
     padding: 0px;
     min-height: 100svh;
 }
 a {
-    color: #FFF;
-    /* text-decoration: none; */
+    color: rgb(255,255,255);
+    text-underline-offset: 3px;
+    text-decoration-color: rgba(255,255,255,0.2);
+}
+a:hover {
+    text-decoration-color: rgba(255,255,255,0.9)
 }
 h1, h2, h3, h4, h5, h6 {
+    font-family: Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif;
+    font-weight: 600;
     text-wrap: balance;
 }
 p {
-    max-width: 80ch;
-    text-wrap: pretty;
+    max-width: 75ch;
+    text-wrap: pretty; /* no orphans! */
+}
+
+/* --------------------------------------------- */
+
+.top-nav {
+    background: #666;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
