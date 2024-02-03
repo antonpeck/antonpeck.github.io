@@ -4,7 +4,7 @@ html {
     hanging-punctuation: first last;
 }
 body {
-    background: rgb(39, 55, 77);
+    background: rgb(23, 33, 46);
     font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
     line-height: 1.25rem;
     font-weight: 300;
@@ -25,32 +25,54 @@ a:hover {
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif;
-    font-weight: 600;
+    font-weight: 400;
     text-wrap: balance;
 }
-p {
-    /* max-width: 75ch; */
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: cover;
+    shape-margin: 1rem;
+}
+main p {
+    max-width: 75ch;
     text-wrap: pretty; /* no orphans! */
+}
+main ul {
+    margin: .5rem;
+    padding: .5rem;
 }
 
 /* --------------------------------------------- */
 
-.text-center: {
+.text-center {
     text-align: center;
 }
-
-.top-nav {
-    background: #666;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr; */
-}
-.content-grid {
+.top-nav, .top-nav-list {
     display: grid;
-    grid-template-columns: 100px [breakout-start] 100px [content-start] 1fr [content-end] 100px [breakout-end] 100px;
+    grid-template-columns: 1fr 1fr;
 }
-.content-grid > * {
+/* Special thanks to Kevin Powell for the tutorial on this grid naming section! */
+.content-grid,
+.full-width {
+    display: grid;
+    grid-template-columns: [full-width-start] 100px [breakout-start] 100px [content-start] 1fr [content-end] 100px [breakout-end] 100px [full-width-end];
+}
+.content-grid > *,
+.full-width > * {
     grid-column: content;
 }
 .content-grid > .breakout {
     grid-column: breakout;
+}
+.content-grid > .full-width {
+    grid-column: full-width;
+}
+.full-width {
+    background-color: rgba(0,0,0,0.25);
+    border: 1px solid rgba(0,0,0,0.75);
+    border-width: 1px 0;
 }
