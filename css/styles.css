@@ -29,14 +29,28 @@ h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
 }
 p {
-    max-width: 75ch;
+    /* max-width: 75ch; */
     text-wrap: pretty; /* no orphans! */
 }
 
 /* --------------------------------------------- */
 
+.text-center: {
+    text-align: center;
+}
+
 .top-nav {
     background: #666;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+}
+.content-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 100px [breakout-start] 100px [content-start] 1fr [content-end] 100px [breakout-end] 100px;
+}
+.content-grid > * {
+    grid-column: content;
+}
+.content-grid > .breakout {
+    grid-column: breakout;
 }
