@@ -27,6 +27,8 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif;
     font-weight: 400;
     text-wrap: balance;
+    line-height: 2ch;
+    margin: 1ch 0;
 }
 img {
     max-width: 100%;
@@ -40,6 +42,7 @@ img {
 main p {
     max-width: 75ch;
     text-wrap: pretty; /* no orphans! */
+    margin: 1ch 0;
 }
 main ul {
     margin: .5rem;
@@ -51,13 +54,12 @@ main ul {
 .text-center {
     text-align: center;
 }
-.top-nav, .top-nav-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.flex {
+    display: flex;
 }
 /* Special thanks to Kevin Powell for the video tutorial on this grid naming section! */
 .content-grid {
-    --padding-inline: 2rem;
+    --padding-inline: 2ch;
     --content-max-width: 70ch;
     --breakout-max-width: 85ch;
     --breakout-size: calc((var(--breakout-max-width) - var(--content-max-width)) / 2);
@@ -85,4 +87,23 @@ main ul {
     background-color: rgba(0,0,0,0.25);
     border: 1px solid rgba(0,0,0,0.75);
     border-width: 1px 0;
+}
+.top-nav {
+    background: rgba(0,0,0,0.25);
+    border: 1px solid rgba(0,0,0,0.75);
+    border-width: 1px 0;
+    justify-content: space-between;
+}
+.top-nav, .top-nav-list, .top-nav-list > li {
+    align-items: center;
+    gap: 2ch;
+    padding: 0;
+    margin: 0;
+}
+.top-nav a {
+    display: block;
+    padding: 20px 20px;
+}
+.top-nav-list {
+    list-style-type: none;
 }

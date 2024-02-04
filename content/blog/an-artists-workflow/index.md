@@ -18,6 +18,7 @@ Something I should mention is that I also like to have the texture of a pencil i
 I have used a variety of scanners over the years and haven’t yet found one that I absolutely love. They all have their quirks. Currently, I’m using an old multifunction HP that does a decent enough of a job. Scanners are pretty inexpensive, so finding one that fits your budget and home office shouldn’t be too difficult.
 
 The scan itself is roughly 4”x6” at 600 dpi. I should also note that when I’m scanning artwork, I switch to grayscale to avoid having any color artifacts in the image later on.
+Hello there, mr test-test man!
 
 ![Drawing of a robot shark](img/Blog-Workflow-Draw.jpg)
 
