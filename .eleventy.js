@@ -17,8 +17,8 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addWatchTarget("./content/css");
-
   eleventyConfig.addPassthroughCopy("./content/css");
+  eleventyConfig.addPassthroughCopy("./content/blog/**/*.(png|jpg|jpeg)");
 
   return {
 		dir: {
