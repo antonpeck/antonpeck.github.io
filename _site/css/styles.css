@@ -85,25 +85,44 @@ main ul {
 }
 .full-width {
     background-color: rgba(0,0,0,0.25);
-    border: 1px solid rgba(0,0,0,0.75);
+    border: 1px solid rgba(200,200,200,0.15);
     border-width: 1px 0;
 }
 .top-nav {
     background: rgba(0,0,0,0.25);
-    border: 1px solid rgba(0,0,0,0.75);
+    border: 1px solid rgba(200,200,200,0.15);
     border-width: 1px 0;
     justify-content: space-between;
 }
 .top-nav, .top-nav-list, .top-nav-list > li {
-    align-items: center;
+    /* align-items: center; */
     gap: 2ch;
     padding: 0;
     margin: 0;
 }
 .top-nav a {
     display: block;
-    padding: 20px 20px;
+    padding: 20px 30px;
 }
 .top-nav-list {
     list-style-type: none;
+}
+@media (max-width: 35em) {
+    .top-nav-list {
+        gap: 0;
+        position: fixed;
+        inset: 0 0 0 30%;
+        flex-direction: column;
+        text-align: left;
+        padding: 10rem 0 0 0;
+        border: 1px solid rgba(200,200,200,0.15);
+        border-width: 0 0 0 1px;
+        background: rgba(0,0,0,0.75);
+    }
+    @supports (backdrop-filter: blur(0)) {
+        .top-nav-list {
+            background: rgba(0,0,0,0.25);
+            backdrop-filter: blur(.5rem);
+        }
+    }
 }
