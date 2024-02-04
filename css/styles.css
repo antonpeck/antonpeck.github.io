@@ -57,6 +57,18 @@ main ul {
 .flex {
     display: flex;
 }
+.visually-hidden {
+    position: absolute;
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	padding: 0 !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	clip: rect(0,0,0,0) !important;
+	white-space: nowrap !important;
+	border: 0 !important;
+}
 /* Special thanks to Kevin Powell for the video tutorial on this grid naming section! */
 .content-grid {
     --padding-inline: 2ch;
@@ -107,10 +119,25 @@ main ul {
 .top-nav-list {
     list-style-type: none;
 }
+.mobile-nav-toggle {
+    display: none;
+}
 @media (max-width: 430px) {
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        background: silver;
+        border: none;
+        width: 2rem;
+        aspect-ratio: 1;
+        top: 15px;
+        right: 30px;
+    }
     .top-nav-list {
         gap: 0;
         position: fixed;
+        z-index: 1000;
         inset: 0 0 0 30%;
         flex-direction: column;
         text-align: left;
@@ -118,6 +145,13 @@ main ul {
         border: 1px solid rgba(200,200,200,0.15);
         border-width: 0 0 0 1px;
         background: rgba(0,0,0,0.75);
+        transform: translateX(100%);
+    }
+    .top-nav-list[data-visible="true"] {
+        transform: translate(0%);
+    }
+    .top-nav-list a {
+        font-size: 1.2rem;
     }
     @supports (backdrop-filter: blur(0)) {
         .top-nav-list {
