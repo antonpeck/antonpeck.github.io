@@ -126,6 +126,35 @@ main ul {
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
 }
+.mobile-nav-toggle .line {
+    transition:
+        y 150ms ease-in 150ms,
+        rotate 150ms ease-in,
+        opacity 0ms 150ms
+    ;
+    transform-origin: center;
+}
+.mobile-nav-toggle[aria-expanded="true"] .line {
+    transition:
+        y 150ms ease-in,
+        rotate 150ms ease-in 150ms,
+        opacity 0ms 150ms
+    ;
+    transform-origin: center;
+}
+.mobile-nav-toggle[aria-expanded="true"] :is(.top, .bottom) {
+    y: 45;
+}
+.mobile-nav-toggle[aria-expanded="true"] .top {
+    rotate: 45deg;
+}
+.mobile-nav-toggle[aria-expanded="true"] .bottom {
+    rotate: -45deg;
+}
+.mobile-nav-toggle[aria-expanded="true"] .middle {
+    opacity: 0;
+}
+
 @media (max-width: 430px) {
     .mobile-nav-toggle {
         display: block;
