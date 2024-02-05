@@ -44,6 +44,9 @@ main p {
     text-wrap: pretty; /* no orphans! */
     margin: 1ch 0;
 }
+main p:last-child {
+    margin-bottom: 2ch;
+}
 main ul {
     margin: .5rem;
     padding: .5rem;
@@ -69,6 +72,12 @@ main ul {
 	white-space: nowrap !important;
 	border: 0 !important;
 }
+/* .main-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+} */
 /* Special thanks to Kevin Powell for the video tutorial on this grid naming section! */
 .content-grid {
     --padding-inline: 2ch;
@@ -99,6 +108,8 @@ main ul {
     background-color: rgba(0,0,0,0.25);
     border: 1px solid rgba(200,200,200,0.15);
     border-width: 1px 0;
+    padding: 1rem 0;
+    margin: 1rem 0;
 }
 .top-nav {
     background: rgba(0,0,0,0.25);
@@ -157,7 +168,7 @@ main ul {
 @media (max-width: 430px) {
     .mobile-nav-toggle {
         display: block;
-        position: absolute;
+        position: fixed;
         z-index: 9999;
         background: transparent;
         border: none;
