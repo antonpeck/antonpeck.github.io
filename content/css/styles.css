@@ -138,8 +138,7 @@ main ul {
     transition:
         y 150ms ease-in,
         rotate 150ms ease-in 150ms,
-        opacity 0ms 150ms
-    ;
+        opacity 0ms 150ms;
     transform-origin: center;
 }
 .mobile-nav-toggle[aria-expanded="true"] :is(.top, .bottom) {
@@ -162,7 +161,7 @@ main ul {
         z-index: 9999;
         background: transparent;
         border: none;
-        width: 1.6rem;
+        width: 25px;
         aspect-ratio: 1;
         top: 1.2rem;
         right: 1.2rem;
