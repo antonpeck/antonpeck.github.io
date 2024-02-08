@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
     text-wrap: balance;
     line-height: 2ch;
-    margin: 1ch 0;
+    margin: .25rem 0;
 }
 img {
     max-width: 100%;
@@ -38,6 +38,9 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     shape-margin: 1rem;
+}
+main {
+    padding: 1rem 0;
 }
 main p {
     max-width: 75ch;
@@ -50,6 +53,10 @@ main p:last-child {
 main ul {
     margin: .5rem;
     padding: .5rem;
+}
+main li {
+    margin: .1rem 0;
+    padding: .1rem 0;
 }
 
 /* --------------------------------------------- */
@@ -77,7 +84,20 @@ main ul {
     bottom: 0;
     left: 0;
     right: 0;
-} */
+}*/
+.vert-snug {
+    padding: .5rem 0;
+}
+.vert-snug > * {
+    margin: .25rem 0;
+}
+.alert {
+    background: rgba(150,0,0,0.25);
+    border: 1px solid rgba(92,0,0,0.75);
+    border-radius: 5px;
+    padding: .25rem 1rem;
+    margin: 1rem 0;
+}
 /* Special thanks to Kevin Powell for the video tutorial on this grid naming section! */
 .content-grid {
     --padding-inline: 2ch;

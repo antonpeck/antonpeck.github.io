@@ -15,7 +15,13 @@
     </header>
 
     <main class="content-grid">
-        <h2>{{title}}</h2>
+
+        <div class="alert vert-snug">
+            <p><strong>Live redesign in progress</strong></p>
+            <p>This website is currently undergoing updates across the board. Fresh content, custom code, and a new design. Feel free to stop in every so often, to see what I&rsquo;m up to. And as always, thanks for stopping by! ❤️</p>
+        </div>
+
+        <h1>{{title}}</h1>
         {% block content %}
         {{ content | safe }}
         {% endblock %}
